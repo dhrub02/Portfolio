@@ -1,263 +1,209 @@
+/* Base Styles */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-html,body {
-    height: 100%;
-    width: 100%
-}
-
-.container{
+html, body {
     height: 100%;
     width: 100%;
-    background:linear-gradient(180deg,black,cyan);
+}
+
+.container {
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(180deg, black, cyan);
     font-family: Arial, Helvetica, sans-serif;
     display: flex;
     align-items: center;
     justify-content: center;
+    padding: 20px;
 }
 
-.box{
-    height: 90%;
-    width: 90%;
-    background-color: rgb(20, 20, 20);
+.box {
+    color: white;
+    width: 100%;
+    max-width: 1200px;
+    background-color: rgb(24, 22, 22);
     border-radius: 20px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
-h1{
-    padding-top: 10px;
-    padding-left: 40px;
-    padding-bottom: 5%;
-    font-size: largest;
+h1 {
+    padding-left: 20px;
+    padding-top: 20px;
     font-family: sans-serif;
-    font-weight: bolder;
-    height: 2rem;
-    width: 5rem;
-    background-color: rgb(20, 20, 20)y;
-    color: white;
+    font-size: 2.5rem;
+    display: inline;
 }
 
-
-p {
-    padding-left: 40px;
+.contant {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
 }
 
-.P1{
-    padding-top: 10px;
-    height: 40px;
-    font-family: sans-serif;
-    font-weight: bolder;
-    font-size: xx-large;
-    color:white;
+.me {
+    color: cyan;
 }
 
-.P2 {
-    height: 60px;
-    font-family: sans-serif;
-    font-weight: bolder;
-    font-size: xxx-large;
-    color:white;
-}
-
-.P3 {
-    height: 20px;
-    font-family: sans-serif;
-    font-weight: bolder;
-    font-size: large;
-    color:white;
-}
-
-.P4 {
-    padding-top: 3px;
-    height: 20px;
-    font-family: sans-serif;
-    font-weight: bolder;
-    font-size: medium;
-    color:white;
-}
-
-
-
-#i1{
-    font-size: xxx-large;
-    padding-top: 10px;
-    padding-left: 40px;
-    color: white;
-}
-
-#i2 {
-    font-size: xxx-large;
-    padding-top: 10px;
-    padding-left: 5px;
-    color: white;
-}
-
-a {
-    width: 20px;
-   text-decoration-color: black ;
+.about-me {
+    padding: 20px;
+    font-size: 1.2rem;
+    line-height: 1.6;
+    flex: 1 1 60%;
 }
 
 img {
     height: 300px;
     width: 300px;
     border-radius: 50%;
-    top: 130px;
-    right: 100px;
-    position: fixed;
+    position: relative;
     animation: float 6s ease-in-out infinite;
-
+    margin: 20px auto;
+    display: block;
+    flex: 1 1 30%;
 }
 
 @keyframes float {
-	0% {
-		box-shadow: 0 5px 15px 0px rgba(255,255,255,0.6);
-		transform: translatey(0px);
-	}
-	50% {
-		box-shadow: 0 25px 15px 0px rgba(255,255,255,0.2);
-		transform: translatey(-20px);
-	}
-	100% {
-		box-shadow: 0 5px 15px 0px rgba(255,255,255,0.6);
-		transform: translatey(0px);
-	}
+    0% {
+        box-shadow: 0 5px 15px 0px rgba(255, 255, 255, 0.6);
+        transform: translateY(0px);
+    }
+    50% {
+        box-shadow: 0 25px 15px 0px rgba(255, 255, 255, 0.2);
+        transform: translateY(-20px);
+    }
+    100% {
+        box-shadow: 0 5px 15px 0px rgba(255, 255, 255, 0.6);
+        transform: translateY(0px);
+    }
 }
 
-.about {
-    height: 50px;
-    width: 50px;
-    font-size: xx-large ;
-    padding-left: 40%;
+p {
+    font-size: 1rem;
+    font-family: sans-serif;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 20px;
+}
+
+a {
     text-decoration: none;
-    color: white;
-    bottom: -200px;
-    position: relative;
+    margin: 0 10px;
 }
 
-/* Responsive Design for Tablets */
-@media (min-width: 769px) and (max-width: 2240px) {
+.fa-brands {
+    font-size: 3rem;
+    color: white;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.fa-brands:hover {
+    transform: scale(1.2);
+    color: cyan;
+}
+
+/* Tablet Responsiveness */
+@media (min-width: 769px) and (max-width: 1024px) {
     .box {
-        width: 85%;
-        height: auto;
-        padding: 30px;
+        padding: 15px;
     }
 
     h1 {
-        font-size: x-large;
-        padding-left: 30px;
-    }
-
-    p {
-        padding-left: 30px;
-    }
-
-    .P1 {
-        font-size: xx-large;
-    }
-
-    .P2 {
-        font-size: xxx-large;
-    }
-
-    .P3, .P4 {
-        font-size: large;
-    }
-
-    #i1, #i2 {
-        font-size: xx-large;
-        padding-left: 30px;
+        font-size: 2rem;
     }
 
     img {
         height: 250px;
         width: 250px;
-        top: auto;
-        position: static;
-        display: block;
-        margin: 20px auto;
     }
 
-    .about {
-        font-size: x-large;
-        padding-left: 0;
-        text-align: center;
-        display: block;
-        margin: 30px auto;
-        position: static;
+    .about-me {
+        font-size: 1.1rem;
+        padding: 15px;
+    }
+
+    .fa-brands {
+        font-size: 2.5rem;
     }
 }
 
-/* Responsive Design for Mobile Devices */
+/* Mobile Responsiveness */
 @media (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+
     .box {
-        width: 95%;
-        height: auto;
-        padding: 20px;
+        padding: 10px;
     }
 
     h1 {
-        font-size: large;
-        padding-left: 20px;
+        font-size: 1.8rem;
+        text-align: center;
+        padding: 10px 0;
     }
 
-    p {
-        padding-left: 20px;
-    }
-
-    .P1 {
-        font-size: x-large;
-    }
-
-    .P2 {
-        font-size: xx-large;
-    }
-
-    .P3, .P4 {
-        font-size: medium;
-    }
-
-    #i1, #i2 {
-        font-size: x-large;
-        padding-left: 20px;
+    .contant {
+        flex-direction: column;
+        align-items: center;
     }
 
     img {
         height: 200px;
         width: 200px;
-        top: auto;
-        position: static;
-        display: block;
-        margin: 20px auto;
     }
 
-    .about {
-        font-size: large;
-        padding-left: 0;
+    .about-me {
+        font-size: 1rem;
+        padding: 10px;
         text-align: center;
-        display: block;
-        margin: 20px auto;
-        position: static;
+    }
+
+    p {
+        font-size: 0.9rem;
+        margin-top: 15px;
+    }
+
+    .fa-brands {
+        font-size: 2rem;
     }
 }
 
-/* Even Smaller Screens (Phones) */
+/* Small Phones */
 @media (max-width: 480px) {
     h1 {
-        font-size: medium;
-    }
-
-    .P1, .P2 {
-        font-size: large;
-    }
-
-    #i1, #i2 {
-        font-size: large;
+        font-size: 1.5rem;
     }
 
     img {
         height: 150px;
         width: 150px;
+    }
+
+    .about-me {
+        font-size: 0.9rem;
+        padding: 8px;
+    }
+
+    p {
+        font-size: 0.8rem;
+        margin-top: 10px;
+    }
+
+    .fa-brands {
+        font-size: 1.5rem;
+    }
+
+    a {
+        margin: 5px;
+    }
+
+    .fa-brands:hover {
+        transform: scale(1.1);
     }
 }
