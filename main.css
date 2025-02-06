@@ -1,0 +1,263 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body {
+    height: 100%;
+    width: 100%
+}
+
+.container{
+    height: 100%;
+    width: 100%;
+    background:linear-gradient(180deg,black,cyan);
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.box{
+    height: 90%;
+    width: 90%;
+    background-color: rgb(20, 20, 20);
+    border-radius: 20px;
+}
+
+h1{
+    padding-top: 10px;
+    padding-left: 40px;
+    padding-bottom: 5%;
+    font-size: largest;
+    font-family: sans-serif;
+    font-weight: bolder;
+    height: 2rem;
+    width: 5rem;
+    background-color: rgb(20, 20, 20)y;
+    color: white;
+}
+
+
+p {
+    padding-left: 40px;
+}
+
+.P1{
+    padding-top: 10px;
+    height: 40px;
+    font-family: sans-serif;
+    font-weight: bolder;
+    font-size: xx-large;
+    color:white;
+}
+
+.P2 {
+    height: 60px;
+    font-family: sans-serif;
+    font-weight: bolder;
+    font-size: xxx-large;
+    color:white;
+}
+
+.P3 {
+    height: 20px;
+    font-family: sans-serif;
+    font-weight: bolder;
+    font-size: large;
+    color:white;
+}
+
+.P4 {
+    padding-top: 3px;
+    height: 20px;
+    font-family: sans-serif;
+    font-weight: bolder;
+    font-size: medium;
+    color:white;
+}
+
+
+
+#i1{
+    font-size: xxx-large;
+    padding-top: 10px;
+    padding-left: 40px;
+    color: white;
+}
+
+#i2 {
+    font-size: xxx-large;
+    padding-top: 10px;
+    padding-left: 5px;
+    color: white;
+}
+
+a {
+    width: 20px;
+   text-decoration-color: black ;
+}
+
+img {
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+    top: 130px;
+    right: 100px;
+    position: fixed;
+    animation: float 6s ease-in-out infinite;
+
+}
+
+@keyframes float {
+	0% {
+		box-shadow: 0 5px 15px 0px rgba(255,255,255,0.6);
+		transform: translatey(0px);
+	}
+	50% {
+		box-shadow: 0 25px 15px 0px rgba(255,255,255,0.2);
+		transform: translatey(-20px);
+	}
+	100% {
+		box-shadow: 0 5px 15px 0px rgba(255,255,255,0.6);
+		transform: translatey(0px);
+	}
+}
+
+.about {
+    height: 50px;
+    width: 50px;
+    font-size: xx-large ;
+    padding-left: 40%;
+    text-decoration: none;
+    color: white;
+    bottom: -200px;
+    position: relative;
+}
+
+/* Responsive Design for Tablets */
+@media (min-width: 769px) and (max-width: 2240px) {
+    .box {
+        width: 85%;
+        height: auto;
+        padding: 30px;
+    }
+
+    h1 {
+        font-size: x-large;
+        padding-left: 30px;
+    }
+
+    p {
+        padding-left: 30px;
+    }
+
+    .P1 {
+        font-size: xx-large;
+    }
+
+    .P2 {
+        font-size: xxx-large;
+    }
+
+    .P3, .P4 {
+        font-size: large;
+    }
+
+    #i1, #i2 {
+        font-size: xx-large;
+        padding-left: 30px;
+    }
+
+    img {
+        height: 250px;
+        width: 250px;
+        top: auto;
+        position: static;
+        display: block;
+        margin: 20px auto;
+    }
+
+    .about {
+        font-size: x-large;
+        padding-left: 0;
+        text-align: center;
+        display: block;
+        margin: 30px auto;
+        position: static;
+    }
+}
+
+/* Responsive Design for Mobile Devices */
+@media (max-width: 768px) {
+    .box {
+        width: 95%;
+        height: auto;
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: large;
+        padding-left: 20px;
+    }
+
+    p {
+        padding-left: 20px;
+    }
+
+    .P1 {
+        font-size: x-large;
+    }
+
+    .P2 {
+        font-size: xx-large;
+    }
+
+    .P3, .P4 {
+        font-size: medium;
+    }
+
+    #i1, #i2 {
+        font-size: x-large;
+        padding-left: 20px;
+    }
+
+    img {
+        height: 200px;
+        width: 200px;
+        top: auto;
+        position: static;
+        display: block;
+        margin: 20px auto;
+    }
+
+    .about {
+        font-size: large;
+        padding-left: 0;
+        text-align: center;
+        display: block;
+        margin: 20px auto;
+        position: static;
+    }
+}
+
+/* Even Smaller Screens (Phones) */
+@media (max-width: 480px) {
+    h1 {
+        font-size: medium;
+    }
+
+    .P1, .P2 {
+        font-size: large;
+    }
+
+    #i1, #i2 {
+        font-size: large;
+    }
+
+    img {
+        height: 150px;
+        width: 150px;
+    }
+}
