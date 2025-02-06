@@ -171,6 +171,7 @@ a {
 
     .fa-brands {
         font-size: 2rem;
+        padding-top: 10px;
     }
 }
 
@@ -197,6 +198,7 @@ a {
 
     .fa-brands {
         font-size: 1.5rem;
+        margin-top:20px;
     }
 
     a {
